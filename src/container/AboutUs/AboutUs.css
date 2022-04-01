@@ -1,0 +1,125 @@
+.aboutUs {
+  position: relative;
+  padding: 4rem 6rem;
+}
+
+.about-overlay {
+  position: absolute;
+  inset: 0;
+}
+.about-overlay img {
+  width: 290px;
+  z-index: 1;
+}
+.about-content {
+  z-index: 5;
+}
+
+.contentAbout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
+
+.contentAbout img {
+  transform: rotate(180deg);
+}
+
+.about-content .knife {
+  margin: 0 3rem;
+}
+
+.about-content .knife img {
+  height: 610px;
+}
+
+.contentAbout,
+.contentHistory {
+  flex: 1;
+  width: 100%;
+}
+.contentAbout p,
+.contentHistory p {
+  margin: 2rem 0;
+  color: var(--color-grey);
+}
+
+@media screen and (max-width: 1080px) {
+  .contentAbout h1,
+  .contentHistory h1 {
+    line-height: 60px;
+  }
+}
+@media screen and (max-width: 925px) {
+  .aboutUs {
+    padding: 4rem 3rem;
+  }
+  .about-content .knife img {
+    height: 525px;
+  }
+  .about-overlay img {
+    width: 250px;
+  }
+
+  .about-content .knife {
+    margin: 1.5rem;
+  }
+  .contentAbout h1,
+  .contentHistory h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-content .knife img {
+    height: 480px;
+  }
+  .about-overlay img {
+    width: 220px;
+  }
+
+  .contentAbout h1,
+  .contentHistory h1 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+  .contentAbout p,
+  .contentHistory p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aboutUs {
+    padding: 2rem 1rem;
+  }
+  .about-content .knife img {
+    height: 380px;
+  }
+  .about-overlay img {
+    width: 200px;
+  }
+  .about-content .knife {
+    margin: 1rem;
+  }
+  .contentAbout h1,
+  .contentHistory h1 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .contentAbout p,
+  .contentHistory p {
+    font-size: 12px;
+    margin: 1rem 0;
+    line-height: 18px;
+  }
+  .contentAbout button,
+  .contentHistory button {
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0.5rem;
+    border-radius: 4px;
+  }
+}
